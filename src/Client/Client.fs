@@ -58,7 +58,7 @@ let initCmd () =
   Cmd.ofPromise loadInitialList () LoadList LoadError
 
 let init () : Model * Cmd<Msg> =
-  let model = { Loading=false
+  let model = { Loading=true
                 ErrorText = None
                 Results = [||]
                 SearchText = ""
